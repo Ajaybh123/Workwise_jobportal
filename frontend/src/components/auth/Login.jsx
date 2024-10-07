@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Label } from '../ui/label'
 import { Input } from '../ui/input'
-import { RadioGroup } from '../ui/radio-group'
 import { Button } from '../ui/button'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -43,7 +42,7 @@ export default function Login() {
         navigate('/')
         toast.success(response.data.message, {
           style: {
-            backgroundColor: '#34d399', // Red color
+            backgroundColor: '#34d399',
           },
         })
       }
@@ -76,10 +75,7 @@ export default function Login() {
       </div>
 
       <div className='flex items-center justify-center bg-gray-100'>
-        <form
-          onSubmit={postData}
-          className='border border-gray-200 rounded-md p-4 my-10 shadow-2xl bg-white mx-4 max-w-sm z-50 absolute top-40'
-        >
+        <form onSubmit={postData} className='border border-gray-200 rounded-md p-4 my-10 shadow-2xl bg-white mx-4 max-w-sm z-50 absolute top-40'>
           <h1 className='font-bold text-xl mb-5 text-center'>Log-In</h1>
 
           <div className='my-2'>

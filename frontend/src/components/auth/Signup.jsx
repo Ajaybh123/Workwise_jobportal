@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Label } from '../ui/label'
 import { Input } from '../ui/input'
-import { RadioGroup } from '../ui/radio-group'
 import { Button } from '../ui/button'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
@@ -63,7 +62,7 @@ export default function Signup() {
                 navigate('/login')
                 toast.success(response.data.message, {
                     style: {
-                        backgroundColor: '#34d399', // Red color
+                        backgroundColor: '#34d399',
                     },
                 })
             }
@@ -84,7 +83,7 @@ export default function Signup() {
         }
     }, [])
     return (
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
             <div style={{
                 backgroundImage: `url(${authImage})`,
                 backgroundSize: 'cover',
@@ -94,7 +93,7 @@ export default function Signup() {
             }}>
             </div>
             <div className='flex items-center justify-center bg-[#f9dec7]'>
-                <form onSubmit={postData} className='w-1/2 border border-gray-200 rounded-md p-4 my-10 bg-white shadow-xl'>
+                <form onSubmit={postData} className='border border-gray-200 rounded-md p-4 my-10 shadow-2xl bg-white mx-4 max-w-sm z-50 absolute top-40'>
                     <h1 className='font-bold text-xl mb-5 text-center'>Sign UP</h1>
                     <div className='my-2'>
                         <Label>Full Name</Label>
