@@ -1,0 +1,54 @@
+.hero-section {
+  background-image: url('./assets/Job2.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  height: 80vh;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 70vh;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 50vh;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 20vh;
+    padding: 10px 5px;
+  }
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(204, 202, 202);
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #ef8467;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #ed3a08;
+}
+
+.jobs::-webkit-scrollbar {
+  display: none;
+}
