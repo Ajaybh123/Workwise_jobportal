@@ -93,7 +93,7 @@ export default function Signup() {
             }}>
             </div>
             <div className='flex items-center justify-center bg-[#f9dec7]'>
-                <form onSubmit={postData} className='border border-gray-200 rounded-md p-4 my-10 shadow-2xl bg-white mx-4 max-w-sm z-50 absolute top-40'>
+                <form onSubmit={postData} className='border border-gray-200 rounded-md p-4 my-10 shadow-2xl bg-white mx-4 max-w-sm z-50 absolute top-10'>
                     <h1 className='font-bold text-xl mb-5 text-center'>Sign UP</h1>
                     <div className='my-2'>
                         <Label>Full Name</Label>
