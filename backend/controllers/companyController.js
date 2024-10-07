@@ -1,4 +1,4 @@
-import { Company } from "../models/companymodel.js"
+import { Company } from '../models/companyModels.js';
 import getDataUri from '../utils/dataUri.js';
 import cloudinary from '../utils/cloudnary.js';
 
